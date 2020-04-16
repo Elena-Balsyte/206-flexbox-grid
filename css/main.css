@@ -97,23 +97,60 @@ textarea {
 
 
 html {
-  background-color: #fff;
+  background-color: rgb(30, 30, 30);
   height: 100%;
 }
 
 body {
   font-family: 'Source Sans Pro', sans-serif;
-  padding: 2em;
+  padding: 0 2em;
   font-size: 1.25em;
   height: 100%;
   background-color: rgb(30, 30, 30);
+  color: #fff;
 }
 
+header,
+footer {
+  height: 80px;
+  width: 100%;
+}
+
+main,
+ {
+  height: 250px;
+  width: 100%;
+  text-align: left;
+}
+
+header,
+footer,
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5em;
+  background-color: rgb(30, 30, 30);
+  padding: 10px;
+  margin: 20px;
+}
+
+main {
+  border-bottom: 3px solid grey;
+}
+
+footer {
+  border-top: 3px solid grey;
+  justify-content: flex-start;
+}
 .wrapper {
   /*add display:flex and set justify-content to space-between*/
   font-weight: 700;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  justify-content:space-between;
 }
 
 .div-1, .div-2, .div-3 {
@@ -123,8 +160,8 @@ body {
   font-size: 1.25em;
   background-color: rgb(30, 30, 30);
   height: 300px;
-  display: flex;
   width: 30%;
+  display: flex;
   justify-content: center;
   align-items: center;
   padding-left: 15px;
@@ -135,8 +172,25 @@ body {
   padding-right: 35px;
 }
 
+h1, h2 {
+  width: inherit;
+  text-align: left;
+}
 
+h2 {
+  font-size: 1.5em;
+  line-height: 1.5em;
+  font-weight: normal;
+}
 
+h2 span {
+  font-weight: 900;
+  color: yellow;
+}
+
+i {
+  margin: 10px;
+}
 
 /* ==========================================================================
    Helper classes
